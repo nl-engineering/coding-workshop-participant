@@ -1575,8 +1575,8 @@ main() {
 
     # Install data science tools
     install_jupyter_notebook
-    install_apache_spark
-    install_apache_trino
+    #install_apache_spark
+    #install_apache_trino
 
     # Configure services
     configure_sshd

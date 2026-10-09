@@ -1,0 +1,56 @@
+{
+ "tickets": 2000000,
+ "years": {
+  "2023": 500000,
+  "2024": 500000,
+  "2025": 500000,
+  "2026": 500000
+ },
+ "tier": {
+  "1": 1000409,
+  "2": 599299,
+  "3": 400292
+ },
+ "channel": {
+  "email": 901133,
+  "case-system": 399455,
+  "chat": 699412
+ },
+ "domain": {
+  "Payroll": 600269,
+  "Misc": 459869,
+  "Time & Absence": 300015,
+  "Benefits": 299912,
+  "Performance Management": 100508,
+  "Compensation": 99848,
+  "Bulk Transactions": 79481,
+  "Employee/Manager Data Changes": 60098
+ },
+ "country": {
+  "US": 701338,
+  "UK": 398053,
+  "IN": 395680,
+  "SG": 203072,
+  "IE": 162675,
+  "AU": 139182
+ },
+ "status": {
+  "resolved": 1700068,
+  "escalated": 199745,
+  "open": 100187
+ },
+ "resolution_minutes": {
+  "1": {
+   "median": 65.0,
+   "p90": 109
+  },
+  "2": {
+   "median": 330.0,
+   "p90": 547
+  },
+  "3": {
+   "median": 2338.0,
+   "p90": 3925
+  }
+ }
+}
