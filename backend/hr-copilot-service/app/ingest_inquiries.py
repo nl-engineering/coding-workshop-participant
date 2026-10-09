@@ -28,6 +28,9 @@ def _norm(row: dict, i: int) -> dict:
         out[k] = next((str(low[n]) for n in names if low.get(n) not in (None, "")), "")
     if not out["body"]:  # fall back to the longest text field
         out["body"] = max((str(v) for v in low.values() if isinstance(v, str)), key=len, default="")
+    for k in ("tier", "country", "domain"):  # keep tier/country from the case system
+        if low.get(k) not in (None, ""):
+            out[k] = int(low[k]) if k == "tier" and str(low[k]).isdigit() else low[k]
     out["id"] = out["id"] or f"INQ-{i + 1:04d}"
     out["channel"] = (out["channel"] or "email").lower()
     return out

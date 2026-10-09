@@ -138,7 +138,7 @@ export default function CaseView({ caseId, result, onDone, notify }) {
                 <TextField size="small" fullWidth label={canSend ? 'Note (optional)' : 'Rationale (required)'} value={note} onChange={(e) => setNote(e.target.value)} />
               </Stack>
               <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
-                {canSend && <Button variant="contained" color="success" startIcon={<SendIcon />} disabled={busy} onClick={() => decide('SEND')}>Send reply</Button>}
+                {canSend && <Button variant="contained" color="success" startIcon={<SendIcon />} disabled={busy} onClick={() => decide('SEND')}>Approve &amp; send</Button>}
                 {!canSend && p.route !== 'KNOWLEDGE_GAP' && (
                   <Button variant="contained" disabled={busy} onClick={() => decide('APPROVE')}>
                     {p.transaction ? 'Checker: approve & apply' : 'Approve & send'}
